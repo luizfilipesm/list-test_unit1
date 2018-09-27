@@ -5,7 +5,7 @@ const void *copy( const void* first, const void* last, const void* d_first size_
 {
     //conversão para recebimento dos índices
     const byte *it_base = static_cast< const byte *>( first );
-    const byte *it_final = static_cast< const byte *>( last )
+    const byte *it_final = static_cast< const byte *>( last );
     const byte *it_cp = static_cast< const byte *>( d_first );
     
     size_t size_new = it_final - it_base;
