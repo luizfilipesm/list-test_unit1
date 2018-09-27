@@ -3,8 +3,8 @@ typedef bool (*cmp)( const void *, const void * );
 //Aliar byte com base no tamanho predefinidode char (1 byte)
 typedef unsigned char byte;
 
-//Função Min : (Início do Array, Final do Array, Tamanho dos elementos a serem testados, função MinCompare)
-const void *min( const void* first, const void* last, std::size_t size, cmp compare )
+//Função Min : (Início do Array, Final do Array, Tamanho dos elementos a serem testados, função cmp)
+const void *min( const void* first, const void* last, size_t size, cmp compare )
 {
     //conversão para recebimento do primeiro elemento
     const byte *it = static_cast< const byte *>( first );

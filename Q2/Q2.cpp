@@ -1,7 +1,7 @@
 typedef unsigned char byte;
 
 //Função Min : (Início do Array, Final do Array, Tamanho dos elementos a serem testados)
-const void *min( const void* first, const void* last, std::size_t size )
+const void *reverse( const void* first, const void* last, size_t size )
 {
     //conversão para recebimento do primeiro elemento
     const byte *it_up = static_cast< const byte *>( first );
